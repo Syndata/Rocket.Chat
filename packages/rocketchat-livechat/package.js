@@ -221,6 +221,7 @@ Package.onUse(function(api) {
 
 	// livechat app
 	api.addAssets('assets/demo.html', 'client');
+	api.addAssets('assets/syndata.html', 'client-teste');
 
 	// DEPRECATED
 	api.addAssets('assets/rocket-livechat.js', 'client'); // this file is still added to not break currently installed livechat widgets
