@@ -1,4 +1,10 @@
 <template name="register">
+	<script type="text/javascript">
+		RocketChat(function() {
+			this.setCustomField('razaoSocial', 'TesteRazao');
+		});
+	</script>
+	
 	<div class="livechat-form">
 		<div class="error error-color error-background">
 			<span>{{{error}}}</span>
