@@ -34,6 +34,7 @@ Template.register.events({
 			}
 		};
 
+		const $razaoSocial = instance.$('input[name=razaoSocial]');
 		const $name = instance.$('input[name=name]');
 		const $email = instance.$('input[name=email]');
 		if (!($name.val().trim() && $email.val().trim())) {
@@ -49,6 +50,7 @@ Template.register.events({
 
 			const guest = {
 				token: visitor.getToken(),				
+				razaoSocial: $razaoSocial.val(),
 				name: $name.val(),
 				email: $email.val(),
 				department: Livechat.department || departmentId
